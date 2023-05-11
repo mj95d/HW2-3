@@ -1,0 +1,34 @@
+
+public class Main {
+    public static void main(String[] args) {
+        Book b = new Book("Al Baha 88" , 500, "Abdulmajeed");
+        double newPriseBook = b.getPrice() - b.getDiscount();
+        System.out.println("Name : " + b.getName()
+                + "\n" + "Prise = " + b.getPrice()
+                + "\n" + "Author : " + b.getAuthor()
+                + "\n" + "Discount = " + b.getDiscount()
+                + "\n" + "Total Price = " + newPriseBook);
+
+        System.out.println("------------");
+
+        Movie m = new Movie("Al Baha" , 900 , "Abdulmajeed");
+        double newPriseMovie = m.getPrice() - m.getDiscount();
+        System.out.println("Name : " + m.getName()
+                + "\n" + "Prise = " + m.getPrice()
+                + "\n" + "Director : " + m.getDirector()
+                + "\n" + "Discount = " + m.getDiscount()
+                + "\n" + "Total Price = " + newPriseMovie);
+
+        System.out.println("-----------=--------------");
+        MovablePoint mp = new MovablePoint(15, 40, 20, 25);
+        System.out.print("move = ");
+        mp.moveUp();
+        System.out.print("move = ");
+        mp.moveDown();
+        System.out.print("move = ");
+        mp.moveLeft();
+        System.out.print("move = ");
+        mp.moveRight();
+
+    }
+}
